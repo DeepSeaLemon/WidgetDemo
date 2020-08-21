@@ -18,8 +18,12 @@
 		312A6E5C24CE6A0900AD5B58 /* MainWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A6E5B24CE6A0900AD5B58 /* MainWidget.swift */; };
 		312A6E5E24CE6A0A00AD5B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312A6E5D24CE6A0A00AD5B58 /* Assets.xcassets */; };
 		312A6E6224CE6A0A00AD5B58 /* MainWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 312A6E5424CE6A0900AD5B58 /* MainWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3131530224EFA77200B6EC6E /* NextWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131530024EFA69100B6EC6E /* NextWidget.swift */; };
+		3131530524EFAE1500B6EC6E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AF5C1F24D1503500988622 /* TestView.swift */; };
+		3131530824EFAE8100B6EC6E /* NewWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131530724EFAE8100B6EC6E /* NewWidget.swift */; };
 		3193CCD924CFC56900451BEB /* DefineFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3193CCD824CFC56900451BEB /* DefineFile.swift */; };
 		3193CCDA24CFC59100451BEB /* DefineFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3193CCD824CFC56900451BEB /* DefineFile.swift */; };
+		31AF5C2224D1570600988622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312A6E4524CE69F300AD5B58 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +65,12 @@
 		312A6E5B24CE6A0900AD5B58 /* MainWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWidget.swift; sourceTree = "<group>"; };
 		312A6E5D24CE6A0A00AD5B58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		312A6E5F24CE6A0A00AD5B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3131530024EFA69100B6EC6E /* NextWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextWidget.swift; sourceTree = "<group>"; };
+		3131530724EFAE8100B6EC6E /* NewWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWidget.swift; sourceTree = "<group>"; };
 		3193CCD824CFC56900451BEB /* DefineFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineFile.swift; sourceTree = "<group>"; };
 		3193CCDB24CFDB2E00451BEB /* WidgetDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetDemo.entitlements; sourceTree = "<group>"; };
 		3193CCDC24CFDBDB00451BEB /* MainWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MainWidgetExtension.entitlements; sourceTree = "<group>"; };
+		31AF5C1F24D1503500988622 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +141,9 @@
 		312A6E5A24CE6A0900AD5B58 /* MainWidget */ = {
 			isa = PBXGroup;
 			children = (
+				31AF5C1F24D1503500988622 /* TestView.swift */,
+				3131530724EFAE8100B6EC6E /* NewWidget.swift */,
+				3131530024EFA69100B6EC6E /* NextWidget.swift */,
 				312A6E5B24CE6A0900AD5B58 /* MainWidget.swift */,
 				312A6E5D24CE6A0A00AD5B58 /* Assets.xcassets */,
 				312A6E5F24CE6A0A00AD5B58 /* Info.plist */,
@@ -231,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31AF5C2224D1570600988622 /* Assets.xcassets in Resources */,
 				312A6E5E24CE6A0A00AD5B58 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,7 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3131530524EFAE1500B6EC6E /* TestView.swift in Sources */,
+				3131530224EFA77200B6EC6E /* NextWidget.swift in Sources */,
 				3193CCDA24CFC59100451BEB /* DefineFile.swift in Sources */,
+				3131530824EFAE8100B6EC6E /* NewWidget.swift in Sources */,
 				312A6E5C24CE6A0900AD5B58 /* MainWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

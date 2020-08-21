@@ -9,6 +9,9 @@ import Foundation
 
 public let kUserDate = "userDate"
 
+public let kUserViewDate = "userViewDate"
+public let kNewUserViewDate = "NewUserViewDate"
+
 public let kGroupName = "group.com.maibaapp.WidgetDemo"
 
 public func dateToString(date:Date) -> String {
@@ -28,6 +31,22 @@ public func secondBetweenDate(toDate: Date) -> CUnsignedLongLong {
     } else {
         return CUnsignedLongLong(intervalDate - intervalCurrent)
     }
+}
+
+public func daysBetweenDate(toDate: Date) -> String {
+    let currentDate = Date()
+    let intervalCurrent = currentDate.timeIntervalSince1970
+    let intervalDate = toDate.timeIntervalSince1970
+    if intervalCurrent > intervalDate {
+        return "error"
+    }
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+    dateFormatter.locale = Locale.init(identifier: "zh_CN")
+    let calendar = Calendar.current
+    let components = calendar.dateComponents([.day], from: currentDate, to: toDate)
+    let str = "\(components.day!)" + "日"
+    return str
 }
 
 public func timeBetweenDate(toDate: Date) -> String {
